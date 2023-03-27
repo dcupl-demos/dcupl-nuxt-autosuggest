@@ -45,6 +45,11 @@ The page http://localhost:3000/load-from-dcupl/index.vue includes the settings f
 - using a local dcupl server
 - and the demo project and loading the data via CDN
 
+If you want to connect your local project to a new dcupl Console project ...
+- Create the project in the dcupl Console (https://console.dcupl.com)
+- Add dcupl.secrets.json in /dcupl-data and add your apiKey
+- Change the project ID in dcupl.config.json to the one of your new project
+
 
 The page http://localhost:3000/index.vue imports the data from products.ts and does not use dcupl-data. dcupl model and dcupl data is set in the source of the page.
 
