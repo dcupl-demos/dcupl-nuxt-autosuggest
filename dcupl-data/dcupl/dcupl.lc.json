@@ -1,0 +1,45 @@
+{
+  "applications": [
+    {
+      "key": "default",
+      "description": "Demo catalogue with fashion data from kaggle.com",
+      "name": "Fashion Catalogue",
+      "resourceTags": [
+        "Style",
+        "Image"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "url": "${baseUrl}/models/styles.dcupl.json",
+      "type": "model",
+      "tags": [
+        "Style"
+      ]
+    },
+    {
+      "url": "${baseUrl}/models/images.dcupl.json",
+      "type": "model",
+      "tags": [
+        "Image"
+      ]
+    },
+    {
+      "url": "${baseUrl}/data/styles.csv",
+      "type": "data",
+      "model": "Style",
+      "tags": [
+        "Style"
+      ]
+    },
+    {
+      "url": "${baseUrl}/data/images.csv",
+      "type": "data",
+      "model": "Image",
+      "tags": [
+        "Image"
+      ]
+    }
+  ]
+}

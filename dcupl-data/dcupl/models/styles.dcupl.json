@@ -1,0 +1,115 @@
+{
+  "key": "Style",
+  "keyProperty": "styleID",
+  "meta": {
+    "name": "Style Model",
+    "description": "Entity \"Style\", which represents a fashion article"
+  },
+  "references": [
+    {
+      "key":"styleID",
+      "model": "Image",
+      "type":"singleValued",
+      "meta":{
+        "name":"Style ID",
+        "description":"References the image in model Style"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "key":"gender",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Gender",
+        "description":"Gender a style is assigned to"
+      }
+    },
+    {
+      "key":"masterCategory",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Master category",
+        "description":"Master category of a style"
+      }
+    },
+    {
+      "key":"subCategory",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Sub category",
+        "description":"Sub category of a style"
+      }
+    },
+    {
+      "key":"articleType",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Article type",
+        "description":"Article type of a style"
+      }
+    },
+    {
+      "key":"baseColour",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Base colour",
+        "description":"Base colour of a style"
+      }
+    },
+    {
+      "key":"season",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Season",
+        "description":"Season a style is assigned to"
+      }
+    },
+    {
+      "key":"year",
+      "type":"int",
+      "filter":true,
+      "meta":{
+        "name":"Year",
+        "description":"Year a style is assigned to"
+      }
+    },
+    {
+      "key":"usage",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Usage",
+        "description":"Usage of a style"
+      }
+    },
+    {
+      "key":"productDisplayName",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Product display name",
+        "description":"Name of a style, which should be displayed in the shop"
+      }
+    },
+    {
+      "key":"imageURL",
+      "type":"string",
+      "derive": {
+        "localReference": "styleID",
+        "remoteProperty": "link"
+      },
+      "filter":true,
+      "meta":{
+        "name":"Image URL",
+        "description":"Derived URL (model Image) of the image of a style"
+      }
+    }
+  ]
+}

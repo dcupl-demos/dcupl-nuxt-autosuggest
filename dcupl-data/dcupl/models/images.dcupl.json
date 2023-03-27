@@ -1,0 +1,37 @@
+{
+  "key": "Image",
+  "keyProperty": "styleID",
+  "meta": {
+    "name": "Image Model",
+    "description": "Entity \"Image\", which represents the image of a style"
+  },
+  "properties": [
+    {
+      "key":"styleID",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Style ID",
+        "description":"ID of a style"
+      }
+    },
+    {
+      "key":"filename",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Filename",
+        "description":"Filename of the style image"
+      }
+    },
+    {
+      "key":"link",
+      "type":"string",
+      "filter":true,
+      "meta":{
+        "name":"Link",
+        "description":"URL of the style image"
+      }
+    }
+  ]
+}
