@@ -41,6 +41,10 @@ The data, which is included in dcupl-data, is the data from the dcupl demo proje
 
 https://docs.dcupl.com/docs/examples/fashion-products/
 
+
+The page http://localhost:3000/tailwindui-dcupl-autosuggest/ includes a tailwindui autocomplete combobox and fetches the data of the mentioned dcupl demo project. 50 suggestions are generated out of more than 44K products.
+
+
 The page http://localhost:3000/load-from-dcupl/index.vue includes the settings for ...
 - using a local dcupl server
 - and the demo project and loading the data via CDN
@@ -51,7 +55,7 @@ If you want to connect your local project to a new dcupl Console project ...
 - Change the project ID in dcupl.config.json to the one of your new project
 
 
-The page http://localhost:3000/index.vue imports the data from products.ts and does not use dcupl-data. dcupl model and dcupl data is set in the source of the page.
+The page http://localhost:3000/index.vue imports the data from products.ts and does not use /dcupl-data. dcupl model and dcupl data is set in the source of the page.
 
 ## SDK Version
 **The SDK Version is currently set to 1.0.0-beta.4 in the package.json of the main project. 1.0 will be published soon.**
