@@ -58,13 +58,13 @@ If you want to connect your local project to a new dcupl Console project ...
 The page http://localhost:3000/index.vue imports the data from products.ts and does not use /dcupl-data. dcupl model and dcupl data is set in the source of the page.
 
 ## SDK Version
-**The SDK Version is currently set to 1.0.0-beta.4 in the package.json of the main project. 1.0 will be published soon.**
-
+**The SDK Version is currently set to 1.0.0 in the package.json of the main project.**
+Please read the docs - https://docs.dcupl.com
 
 ## open tasks
-- [ ] finish autocompletion
-- [ ] configure fn.suggest (lowercase, ...)
-- [ ] lookup and show results based on suggestion
+- [x] finish autocompletion
+- [x] configure fn.suggest (lowercase, ...)
+- [x] lookup and show results based on suggestion (/load from dcupl)
 - [ ] add new attribute to Style model with expression => suggestions based on various attributes
 - [ ] error handling / catch exceptions
 
