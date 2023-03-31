@@ -87,18 +87,28 @@ https://docs.dcupl.com/docs/examples/fashion-products/
 
 The page http://localhost:3000/tailwindui-dcupl-autosuggest/ includes a tailwindui autocomplete combobox and fetches the data of the mentioned dcupl demo project. 50 suggestions are generated out of more than 44K products.
 
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/756310/229047201-f44d1989-35ea-4133-9a81-73bef0297a6c.png">
+
 
 The page http://localhost:3000/load-from-dcupl/index.vue includes the settings for ...
 - using a local dcupl server
 - and the demo project and loading the data via CDN
+
+<img width="1323" alt="image" src="https://user-images.githubusercontent.com/756310/229047924-aec0b197-5f96-45b3-a2fd-db7ce9452bfe.png">
+
 
 If you want to connect your local project to a new dcupl Console project ...
 - Create the project in the dcupl Console (https://console.dcupl.com)
 - Add dcupl.secrets.json in /dcupl-data and add your apiKey
 - Change the project ID in dcupl.config.json to the one of your new project
 
+Watch our videos for a quick start - https://docs.dcupl.com/docs/getting-started/overview/#videos
+
 
 The page http://localhost:3000/index.vue imports the data from products.ts and does not use /dcupl-data. dcupl model and dcupl data is set in the source of the page.
+
+<img width="1249" alt="image" src="https://user-images.githubusercontent.com/756310/229048128-3573df51-8b94-4e83-a4ab-a50cd84313ad.png">
+
 
 ## SDK Version
 **The SDK Version is currently set to 1.0.0 in the package.json of the main project.**
